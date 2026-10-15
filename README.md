@@ -54,11 +54,12 @@ DATABASE_URL="postgresql://user:password@localhost:5432/mydb"
 
 ```bash
 npx prisma migrate dev --name init
+npx prisma generate
 ```
 
-Команда создаст таблицы по `schema.prisma` и сгенерирует Prisma Client.
+Команды создадут таблицы по `schema.prisma` и сгенерируют Prisma Client.
 
-### 4. Запустить сервер
+### 4. Запустить серверы
 
 ```bash
 npm run dev     # разработка (nodemon)
